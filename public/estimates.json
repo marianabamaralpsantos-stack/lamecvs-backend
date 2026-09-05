@@ -1,0 +1,705 @@
+{
+"seasonModel": {
+"Comporta": [
+1.05,
+1.45,
+2.35,
+3.45
+],
+"Algarve": [
+1,
+1.5,
+2.4,
+3.35
+],
+"Douro": [
+1,
+1.55,
+2,
+2.05
+],
+"Madeira": [
+1.2,
+1.35,
+1.6,
+1.7
+],
+"Porto": [
+1,
+1.4,
+1.95,
+2
+],
+"Lisbon": [
+1.1,
+1.45,
+1.95,
+1.95
+],
+"Lisbon Coast": [
+1,
+1.4,
+2.1,
+2.7
+],
+"Alentejo": [
+1,
+1.4,
+1.85,
+1.9
+],
+"North": [
+1,
+1.3,
+1.7,
+1.9
+],
+"Other": [
+1,
+1.45,
+2,
+2.2
+]
+},
+"hotels": [
+{
+"name": "Six Senses Douro Valley",
+"region": "Douro",
+"floor": 1158,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Four Seasons Hotel Ritz Lisbon",
+"region": "Lisbon",
+"floor": 808,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "The Yeatman",
+"region": "Porto",
+"floor": 328,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Vila Vita Parc Resort & Spa",
+"region": "Algarve",
+"floor": 306,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Penha Longa Resort (Ritz-Carlton)",
+"region": "Lisbon Coast",
+"floor": 486,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Belmond Reid's Palace",
+"region": "Madeira",
+"floor": 516,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Sublime Comporta — Terracotta",
+"region": "Comporta",
+"floor": 242,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Sublime Comporta — Sand",
+"region": "Comporta",
+"floor": 1400,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Vidago Palace Hotel",
+"region": "North",
+"floor": 199,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Anantara Vilamoura Algarve Resort",
+"region": "Algarve",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Savoy Palace",
+"region": "Madeira",
+"floor": 426,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Bairro Alto Hotel",
+"region": "Lisbon",
+"floor": 486,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Pine Cliffs Resort (Luxury Collection)",
+"region": "Algarve",
+"floor": 233,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Conrad Algarve",
+"region": "Algarve",
+"floor": 215,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Pestana Palace Lisboa",
+"region": "Lisbon",
+"floor": 420,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Tivoli Avenida Liberdade Lisboa",
+"region": "Lisbon",
+"floor": 230,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Maison Albar Le Monumental Palace",
+"region": "Porto",
+"floor": 213,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Infante Sagres",
+"region": "Porto",
+"floor": 289,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Vila Foz Hotel & Spa",
+"region": "Douro",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "W Algarve",
+"region": "Algarve",
+"floor": 540,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Verdelago Resort",
+"region": "Algarve",
+"floor": 432,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Palácio Estoril Hotel & Golf",
+"region": "Lisbon Coast",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "The Oitavos",
+"region": "Lisbon Coast",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Corinthia Lisbon",
+"region": "Lisbon",
+"floor": 230,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Olissippo Lapa Palace",
+"region": "Lisbon",
+"floor": 322,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Bela Vista Hotel & Spa",
+"region": "Algarve",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Grande Real Villa Itália Hotel & Spa",
+"region": "Lisbon Coast",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Hotel Quinta do Lago",
+"region": "Algarve",
+"floor": 486,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Martinhal Sagres Beach Family Resort",
+"region": "Algarve",
+"floor": 156,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Les Suites at The Cliff Bay",
+"region": "Madeira",
+"floor": 432,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Grand House Algarve",
+"region": "Algarve",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Palácio do Governador",
+"region": "Lisbon",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Hotel Britania Art Deco",
+"region": "Lisbon",
+"floor": 259,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Pousada de Lisboa",
+"region": "Lisbon",
+"floor": 346,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Memmo Alfama",
+"region": "Lisbon",
+"floor": 270,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "EPIC SANA Marquês",
+"region": "Lisbon",
+"floor": 198,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Hotel das Amoreiras (Amoreiras Collection)",
+"region": "Lisbon",
+"floor": 248,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Tivoli Palácio de Seteais",
+"region": "Lisbon Coast",
+"floor": 454,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Farol Hotel",
+"region": "Lisbon Coast",
+"floor": 346,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Senhora da Guia Cascais",
+"region": "Lisbon Coast",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Douro Royal Valley Hotel & Spa",
+"region": "Douro",
+"floor": 259,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Torel Quinta da Vacaria",
+"region": "Douro",
+"floor": 330,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Douro41 Hotel & Spa",
+"region": "Douro",
+"floor": 238,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "The Lodge Hotel",
+"region": "Porto",
+"floor": 302,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Pestana Palácio do Freixo",
+"region": "Porto",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Porto A.S. 1829 Hotel",
+"region": "Porto",
+"floor": 248,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Convento do Espinheiro (Luxury Collection)",
+"region": "Alentejo",
+"floor": 281,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Torre de Palma Wine Hotel",
+"region": "Alentejo",
+"floor": 302,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Ecorkhotel Évora",
+"region": "Alentejo",
+"floor": 216,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Vila Galé Collection Alter Real",
+"region": "Alentejo",
+"floor": 205,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Palácio de Estoi (Pousada)",
+"region": "Algarve",
+"floor": 227,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Vila Joya",
+"region": "Algarve",
+"floor": 648,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Longevity Health & Wellness Hotel",
+"region": "Algarve",
+"floor": 238,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "The Cliff Bay",
+"region": "Madeira",
+"floor": 237,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Quinta da Casa Branca",
+"region": "Madeira",
+"floor": 270,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Pestana Churchill Bay",
+"region": "Madeira",
+"floor": 259,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Montebelo Vista Alegre Ílhavo",
+"region": "Other",
+"floor": 194,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Bussaco Palace Hotel",
+"region": "Other",
+"floor": 238,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "São Lourenço do Barrocal",
+"region": "Alentejo",
+"floor": 378,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Craveiral Farmhouse",
+"region": "Alentejo",
+"floor": 270,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Areias do Seixo",
+"region": "Other",
+"floor": 378,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Quinta da Comporta",
+"region": "Comporta",
+"floor": 331,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Independente Comporta",
+"region": "Comporta",
+"floor": 259,
+"apiCoverage": "Consortia (quote)",
+"status": "VERIFIED"
+},
+{
+"name": "Verride Palácio Santa Catarina",
+"region": "Lisbon",
+"floor": 432,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Santiago de Alfama Boutique Hotel",
+"region": "Lisbon",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Torel Avantgarde",
+"region": "Porto",
+"floor": 270,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "The Vintage House Hotel",
+"region": "Douro",
+"floor": 270,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "L'AND Vineyards",
+"region": "Alentejo",
+"floor": 324,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Casa de São Lourenço",
+"region": "North",
+"floor": 270,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Torel Palace Lisbon",
+"region": "Lisbon",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Valverde Lisboa Hotel & Garden",
+"region": "Lisbon",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "The Lumiares Hotel & Spa",
+"region": "Lisbon",
+"floor": 324,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Vermelho Melides",
+"region": "Comporta",
+"floor": 540,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "The Ivens (Autograph Collection)",
+"region": "Lisbon",
+"floor": 432,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Memmo Príncipe Real",
+"region": "Lisbon",
+"floor": 378,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Palácio Príncipe Real",
+"region": "Lisbon",
+"floor": 432,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Casa da Calçada (Relais & Châteaux)",
+"region": "Porto",
+"floor": 270,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Quinta Nova Winery House",
+"region": "Douro",
+"floor": 324,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "Dá Licença",
+"region": "Alentejo",
+"floor": 378,
+"apiCoverage": "Consortia (quote)",
+"status": "modelled"
+},
+{
+"name": "1908 Lisboa Hotel",
+"region": "Lisbon",
+"floor": 216,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Octant Douro",
+"region": "Douro",
+"floor": 344,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Octant Ponta Delgada",
+"region": "Madeira",
+"floor": 363,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Octant Furnas",
+"region": "Madeira",
+"floor": 259,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Octant Vila Monte",
+"region": "Algarve",
+"floor": 332,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Octant Praia Verde",
+"region": "Algarve",
+"floor": 151,
+"apiCoverage": "API (live)",
+"status": "VERIFIED"
+},
+{
+"name": "Octant Évora",
+"region": "Alentejo",
+"floor": 281,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Casal dos Capelinhos",
+"region": "Douro",
+"floor": 194,
+"apiCoverage": "API (live)",
+"status": "modelled"
+},
+{
+"name": "Terra Nostra Garden Hotel",
+"region": "Madeira",
+"floor": 281,
+"apiCoverage": "API (live)",
+"status": "modelled"
+}
+],
+"seasonMonths": {
+"Low": [
+11,
+12,
+1,
+2
+],
+"Shoulder": [
+3,
+4,
+10
+],
+"High": [
+5,
+6,
+9
+],
+"Peak": [
+7,
+8
+]
+},
+"note": "Fallback seasonal estimates for LAMECVS. Floor x region-season multiplier. USD."
+}
