@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAMECVS — price test</title>
+<style>
+  body{font-family:-apple-system,Arial,sans-serif;background:#F4F2EC;color:#151513;max-width:640px;margin:40px auto;padding:0 24px;line-height:1.6}
+  h1{font-family:Georgia,serif;font-weight:400}
+  label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#8B897E;margin:14px 0 4px}
+  input,select{width:100%;padding:10px;border:1px solid #ccc;font-size:15px;background:#fff}
+  button{margin-top:20px;padding:12px 22px;background:#151513;color:#F4F2EC;border:none;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  #out{margin-top:26px;padding:18px;border:1px solid #151513;background:#fff;display:none}
+  #out .p{font-family:Georgia,serif;font-size:2rem}
+  #out .tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border:1px solid #151513;margin-left:8px;vertical-align:6px}
+  #out .live{background:#1E6B3A;color:#fff;border-color:#1E6B3A}
+  #out .estimate{background:#8A6D1E;color:#fff;border-color:#8A6D1E}
+  #out .note{font-size:13px;color:#3B3A36;margin-top:6px}
+  .hint{font-size:13px;color:#8B897E;margin-top:8px}
+</style>
+</head>
+<body>
+  <h1>LAMECVS — live price test</h1>
+  <p class="hint">Type a hotel from your database and dates. You'll get a <b>live</b> rate if the network has one, otherwise your <b>database estimate</b>. Both always return a price.</p>
+
+  <label>Hotel (exactly as in your database)</label>
+  <input id="hotel" value="Six Senses Douro Valley" list="hotels">
+  <datalist id="hotels"></datalist>
+
+  <label>Check-in</label>
+  <input id="checkIn" type="date" value="2026-09-12">
+
+  <label>Check-out</label>
+  <input id="checkOut" type="date" value="2026-09-15">
+
+  <label>Guests</label>
+  <input id="guests" type="number" value="2" min="1" max="12">
+
+  <button onclick="getPrice()">Get price</button>
+
+  <div id="out">
+    <div><span class="p" id="price">—</span><span class="tag" id="tag"></span></div>
+    <div class="note" id="note"></div>
+  </div>
+
+<script>
+// populate the hotel suggestions from the same data the function uses
+fetch('/data/estimates.json').then(r=>r.json()).then(d=>{
+  const dl=document.getElementById('hotels');
+  d.hotels.forEach(h=>{ const o=document.createElement('option'); o.value=h.name; dl.appendChild(o); });
+}).catch(()=>{});
+
+async function getPrice(){
+  const hotel=document.getElementById('hotel').value;
+  const checkIn=document.getElementById('checkIn').value;
+  const checkOut=document.getElementById('checkOut').value;
+  const guests=document.getElementById('guests').value;
+  const out=document.getElementById('out');
+  out.style.display='block';
+  document.getElementById('price').textContent='…';
+  document.getElementById('tag').textContent='';
+  document.getElementById('note').textContent='';
+  try{
+    const url=`/api/price?hotel=${encodeURIComponent(hotel)}&checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`;
+    const r=await fetch(url); const j=await r.json();
+    document.getElementById('price').textContent = j.price!=null ? '$'+j.price.toLocaleString('en-US')+' / night' : 'On request';
+    const tag=document.getElementById('tag');
+    tag.textContent = j.source;
+    tag.className = 'tag ' + (j.source==='live'?'live':j.source==='estimate'?'estimate':'');
+    document.getElementById('note').textContent = j.note || '';
+  }catch(e){
+    document.getElementById('price').textContent='Error';
+    document.getElementById('note').textContent='Could not reach the function. Check it is deployed.';
+  }
+}
+</script>
+</body>
+</html>
