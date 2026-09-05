@@ -1,0 +1,6 @@
+{
+  "name": "lamecvs-backend",
+  "version": "1.0.0",
+  "description": "LAMECVS live hotel price function (LiteAPI + database fallback estimate)",
+  "private": true
+}

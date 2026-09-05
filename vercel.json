@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/data/estimates.json", "destination": "/estimates.json" }
+  ]
+}
